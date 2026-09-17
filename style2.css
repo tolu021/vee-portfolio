@@ -237,3 +237,22 @@ body {
     background-position: 0% 50%;
   }
 }
+
+/* Styling the Font Awesome icons inside the contact cards */
+.contact-card .contact-icon i {
+  font-size: 2rem;            /* Makes the icons clear and readable */
+  color: #ffffff;              /* Sets default icon color */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Optional: Subtle zoom effect when you hover over a card */
+.contact-card:hover .contact-icon i {
+  transform: scale(1.15);
+}
+
+/* Brand Colors on Hover */
+.contact-card:hover .fa-envelope { color: #ea4335; }   /* Gmail Red */
+.contact-card:hover .fa-linkedin { color: #0a66c2; }   /* LinkedIn Blue */
+.contact-card:hover .fa-x-twitter { color: #ffffff; }  /* X White/Light */
+.contact-card:hover .fa-instagram { color: #e4405f; }  /* Instagram Pink */
+.contact-card:hover .fa-whatsapp { color: #25d366; }   /* WhatsApp Green */
