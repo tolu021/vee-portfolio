@@ -274,3 +274,62 @@ body {
 .contact-card:hover .fa-x-twitter { color: #ffffff; }  /* X White/Light */
 .contact-card:hover .fa-instagram { color: #e4405f; }  /* Instagram Pink */
 .contact-card:hover .fa-whatsapp { color: #25d366; }   /* WhatsApp Green */
+
+/* PROJECT CARD CONTAINER FIX */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* BUTTON BASE STYLES */
+.btn-demo, .btn-code {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* LIVE DEMO BUTTON (CYAN SOLID) */
+.btn-demo {
+  background-color: #38bdf8;
+  color: #0f172a !important;
+  border: 1px solid #38bdf8;
+}
+
+.btn-demo:hover {
+  background-color: #0284c7;
+  border-color: #0284c7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
+}
+
+/* VIEW CODE BUTTON (OUTLINE STYLE) */
+.btn-code {
+  background-color: transparent;
+  color: #38bdf8 !important;
+  border: 1px solid #38bdf8;
+}
+
+.btn-code:hover {
+  background-color: rgba(56, 189, 248, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2);
+}
+
+.btn-demo i, .btn-code i {
+  font-size: 0.9rem;
+}
